@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../app/globals.css"; // Adjusted path
+import Link from "next/link";
+import "@/app/globals.css"; // Adjusted path
 
 interface NavBarProps {
   activePath: string;
@@ -7,12 +8,29 @@ interface NavBarProps {
 }
 
 const NavBar: React.FC<NavBarProps> = ({ activePath, search }) => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white shadow-xl top-0 z-50 py-1 border-b border-black">
-      <div className="container mx-auto flex justify-between items-center px-4 lg:px-10">
-        {/* NavBar content here */}
+    <nav className="w-full bg-white dark:bg-black shadow-xl top-0 z-50 py-4 border-b border-black">
+      <div className="relative container mx-auto flex justify-between items-center px-2 lg:px-10">
+        {/* Logo */}
+          <Link href="/" className={`text-4xl md:text-10xl text-black dark:text-white text-center`}>
+             dan truong.
+          </Link>
+
+        {/* Right-Aligned Links */}
+        <div className="flex flex-1 justify-end items-center">
+          <div className="hidden lg:flex space-x-40">
+            <Link href="/" className={`text-black font-medium text-lg`}>
+              Projects
+            </Link>
+            <Link href="/" className={`text-black font-medium text-lg`}>
+              Resume
+            </Link>
+            <Link href="/" className={`text-black font-medium text-lg`}>
+              Contact Me!
+            </Link>
+          </div>
+        </div>
       </div>
     </nav>
   );
