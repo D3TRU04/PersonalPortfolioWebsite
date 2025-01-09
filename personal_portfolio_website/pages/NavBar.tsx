@@ -20,13 +20,13 @@ const NavBar: React.FC<NavBarProps> = ({ activePath, search }) => {
         {/* Right-Aligned Links */}
         <div className="flex flex-1 justify-end items-center">
           <div className="hidden lg:flex space-x-40">
-            <Link href="/" className={`text-black font-medium text-lg`}>
+            <Link href="/ProjectsPage" className={`text-black font-medium text-lg`}>
               Projects
             </Link>
-            <Link href="/" className={`text-black font-medium text-lg`}>
+            <Link href="/ResumePage" className={`text-black font-medium text-lg`}>
               Resume
             </Link>
-            <Link href="/" className={`text-black font-medium text-lg`}>
+            <Link href="/ContactMePage" className={`text-black font-medium text-lg`}>
               Contact Me!
             </Link>
           </div>
