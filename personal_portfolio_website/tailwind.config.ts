@@ -15,7 +15,7 @@ function addVariablesForColors({ addBase, theme }: any) {
   });
 }
 
-// Merged Tailwind CSS configuration
+// Tailwind CSS Configuration
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -34,16 +34,16 @@ const config: Config = {
         foreground: "var(--foreground)",
         ...colors,
         burntOrange: {
-          50: '#FBE4D6',
-          100: '#F5C3B1',
-          200: '#F1A48C',
-          300: '#EE8556',
-          400: '#EB6824',
-          500: '#D45E00',
-          600: '#B05400',
-          700: '#8D4200',
-          800: '#693100',
-          900: '#3C1A00',
+          50: "#FBE4D6",
+          100: "#F5C3B1",
+          200: "#F1A48C",
+          300: "#EE8556",
+          400: "#EB6824",
+          500: "#D45E00",
+          600: "#B05400",
+          700: "#8D4200",
+          800: "#693100",
+          900: "#3C1A00",
         },
       },
       fontFamily: {
@@ -57,11 +57,9 @@ const config: Config = {
       animation: {
         shimmer: "shimmer 2s linear infinite",
         aurora: "aurora 60s linear infinite",
-        first: "moveVertical 30s ease infinite",
-        second: "moveInCircle 20s reverse infinite",
-        third: "moveInCircle 40s linear infinite",
-        fourth: "moveHorizontal 40s ease infinite",
-        fifth: "moveInCircle 20s ease infinite",
+        moveVertical: "moveVertical 30s ease infinite",
+        moveInCircle: "moveInCircle 20s reverse infinite",
+        moveHorizontal: "moveHorizontal 40s ease infinite",
       },
       keyframes: {
         shimmer: {

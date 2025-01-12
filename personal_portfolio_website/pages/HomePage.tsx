@@ -1,20 +1,24 @@
 'use client'
 import React from 'react';
 import NavBar from './NavBar';
+import { AuroraBackground } from '../components/aurora-background';
 
 function LandingPage() {
   return (
     <>
+    <AuroraBackground>
       <NavBar activePath="" />
       <div className="w-full h-screen bg-white dark:bg-black text-black flex items-center justify-center">
         <div className="flex flex-col lg:flex-row items-center justify-between w-full px-6 sm:px-12 lg:px-24">
           {/* Left side: Image container */}
-          <div className="w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0">
+          <div className="relative max-w-xl w-full h-auto mt-4 mb-4 rounded-lg shadow-lg p-[3px] bg-[conic-gradient(from_90deg_at_50%_50%,#007AFF,#4B55D6,#9C52DE,#FF2D55,#FF7F00,#007AFF)] mt-10 mb-10">
+            <div className="w-full h-auto rounded-lg bg-white dark:bg-black p-[2px]">
             <img 
               src="/WebsitePFP.jpg" 
               alt="Dan's Portrait"
-              className="max-w-lg w-full h-auto mt-4 mb-4 border-2 border-black rounded-lg shadow-lg"
+              className="w-full h-auto rounded-lg"
             />
+            </div>
           </div>
 
           {/* Right side: Text */}
@@ -31,26 +35,36 @@ function LandingPage() {
 
             {/* Links for LinkedIn and GitHub */}
             <div className="mt-6 flex justify-center gap-6">
-              <a
-                href="https://www.linkedin.com/in/dantruong04/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-2 text-lg bg-blue-600 text-white rounded-md shadow-lg hover:bg-blue-700 transition duration-300"
-              >
+            {/* LinkedIn Button */}
+            <a
+              href="https://www.linkedin.com/in/dantruong04/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative inline-flex h-16 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+            >
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#007AFF,#5856D6,#AF52DE,#FF2D55,#FF9500,#007AFF)]" />
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white px-6 py-2 text-lg font-medium text-black backdrop-blur-3xl hover:bg-blue-700 transition-all duration-300">
                 LinkedIn
-              </a>
-              <a
-                href="https://github.com/D3TRU04"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-2 text-lg bg-gray-800 text-white rounded-md shadow-lg hover:bg-gray-900 transition duration-300"
-              >
+              </span>
+            </a>
+
+            {/* GitHub Button */}
+            <a
+              href="https://github.com/D3TRU04"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative inline-flex h-16 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+            >
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#007AFF,#5856D6,#AF52DE,#FF2D55,#FF9500,#007AFF)]" />
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white px-6 py-2 text-lg font-medium text-black backdrop-blur-3xl hover:bg-gray-900 transition-all duration-300">
                 GitHub
-              </a>
-            </div>
+              </span>
+            </a>
+          </div>
           </div>
         </div>
       </div>
+      </AuroraBackground>
     </>
   );
 }

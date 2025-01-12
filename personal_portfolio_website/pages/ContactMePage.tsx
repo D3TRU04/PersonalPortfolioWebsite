@@ -1,10 +1,12 @@
 'use client'
 import React from 'react';
 import NavBar from './NavBar';
+import { AuroraBackground } from '../components/aurora-background';
 
 const ContactMePage: React.FC = () => {
   return (
     <>
+    <AuroraBackground>
       <NavBar activePath="resume" />
       <div className="w-full h-screen bg-white dark:bg-black text-black dark:text-white flex md:grid place-items-center items-center justify-center">
         <div className="text-center">
@@ -17,6 +19,7 @@ const ContactMePage: React.FC = () => {
           <p className="text-xl mb-4">dantruongg_@utexas.edu</p>
         </div>
       </div>
+      </AuroraBackground>
     </>
   );
 };
