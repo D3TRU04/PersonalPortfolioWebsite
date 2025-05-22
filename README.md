@@ -1,4 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dan Truong's Portfolio
+
+A modern, responsive personal portfolio website built with Next.js and Tailwind CSS.
+
+![Portfolio Preview](/public/WebsitePFP.jpg)
+
+## Features
+
+- 🎨 Modern UI with Tailwind CSS
+- 🌙 Dark/Light mode support
+- 📱 Fully responsive design
+- ⚡ Fast page loads with Next.js
+- 🎭 Beautiful animations and transitions
+- 📄 Project showcase with interactive cards
+- 📞 Contact information
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Framer Motion](https://www.framer.com/motion/) - Animations
 
 ## Getting Started
 
@@ -16,9 +37,26 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── components/     # Reusable UI components
+├── pages/         # Page components
+├── public/        # Static assets
+├── styles/        # Global styles
+└── lib/          # Utility functions
+```
+
+## Contact
+
+Feel free to reach out to me at:
+- Email: dantruongg_@utexas.edu
+- LinkedIn: [Dan Truong](https://www.linkedin.com/in/dantruong04/)
+- GitHub: [D3TRU04](https://github.com/D3TRU04)
+
+## License
+
+MIT License - feel free to use this code for your own portfolio!
 
 ## Learn More
 
