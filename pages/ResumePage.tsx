@@ -1,22 +1,18 @@
 'use client'
 import React from 'react';
 import NavBar from './NavBar';
-import { AuroraBackground } from '../components/aurora-background';
+import Image from 'next/image';
 
 const ResumePage: React.FC = () => {
   return (
     <>
-      <NavBar activePath="" />
+      <NavBar />
       <div className="w-full h-full bg-white dark:bg-black text-black dark:text-white flex md:grid place-items-center items-center justify-center">
         <div className="text-center">
           {/* Display resized resume image with black border */}
           <div className="relative max-w-xl w-full h-auto mt-4 mb-4 rounded-lg shadow-lg p-[3px] bg-[conic-gradient(from_90deg_at_50%_50%,#007AFF,#4B55D6,#9C52DE,#FF2D55,#FF7F00,#007AFF)] mt-10 mb-10">
             <div className="w-full h-auto rounded-lg bg-white dark:bg-black p-[2px]">
-              <img
-                src="/WebsiteResume.jpg"
-                alt="Resume"
-                className="w-full h-auto rounded-lg"
-              />
+              <Image src="/WebsiteResume.jpg" alt="Resume" width={800} height={1000} />
             </div>
           </div>
 

@@ -32,7 +32,11 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        ...colors,
+        sky: colors.sky,
+        stone: colors.stone,
+        neutral: colors.neutral,
+        gray: colors.gray,
+        slate: colors.slate,
         burntOrange: {
           50: "#FBE4D6",
           100: "#F5C3B1",

@@ -1,13 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import "@/app/globals.css"; // Adjusted path
 
-interface NavBarProps {
-  activePath: string;
-  search?: boolean;
-}
-
-const NavBar: React.FC<NavBarProps> = ({ activePath, search }) => {
+const NavBar: React.FC = () => {
 
   return (
     <nav className="w-full bg-white dark:bg-black shadow-xl top-0 z-50 py-4 border-b border-black">

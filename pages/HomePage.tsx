@@ -2,35 +2,38 @@
 import React from 'react';
 import NavBar from './NavBar';
 import { AuroraBackground } from '../components/aurora-background';
+import Image from 'next/image';
 
 function LandingPage() {
   return (
     <>
     <AuroraBackground>
-      <NavBar activePath="" />
+      <NavBar />
       <div className="w-full h-screen bg-white dark:bg-black text-black flex items-center justify-center">
         <div className="flex flex-col lg:flex-row items-center justify-between w-full px-6 sm:px-12 lg:px-24">
           {/* Left side: Image container */}
           <div className="relative max-w-xl w-full h-auto mt-4 mb-4 rounded-lg shadow-lg p-[3px] bg-[conic-gradient(from_90deg_at_50%_50%,#007AFF,#4B55D6,#9C52DE,#FF2D55,#FF7F00,#007AFF)] mt-10 mb-10">
             <div className="w-full h-auto rounded-lg bg-white dark:bg-black p-[2px]">
-            <img 
-              src="/WebsitePFP.jpg" 
-              alt="Dan's Portrait"
-              className="w-full h-auto rounded-lg"
-            />
+              <Image 
+                src="/WebsitePFP.jpg" 
+                alt="Dan's Portrait"
+                className="w-full h-auto rounded-lg"
+                width={400}
+                height={400}
+              />
             </div>
           </div>
 
           {/* Right side: Text */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
             <h3 className="text-2xl md:text-6xl font-semibold leading-tight text-black mb-4">
-              Hi, I'm Dan! 👋
+              Hi, I&#39;m Dan! 👋
             </h3>
             <p className="text-xl md:text-2xl text-black mb-4">
-              I'm a passionate Computer Science student at UT Austin.
+              I&#39;m a passionate Computer Science student at UT Austin.
             </p>
             <p className="text-xl md:text-2xl text-black mb-4">
-              Explore the sections above to learn more about my projects, skills, and experiences. Let's connect and create something amazing!
+              Explore the sections above to learn more about my projects, skills, and experiences. Let&#39;s connect and create something amazing!
             </p>
 
             {/* Links for LinkedIn and GitHub */}

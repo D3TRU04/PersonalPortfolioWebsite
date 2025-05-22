@@ -7,7 +7,7 @@ const ContactMePage: React.FC = () => {
   return (
     <>
     <AuroraBackground>
-      <NavBar activePath="resume" />
+      <NavBar />
       <div className="w-full h-screen bg-white dark:bg-black text-black dark:text-white flex md:grid place-items-center items-center justify-center">
         <div className="text-center">
           <h3 className="mt-4 mb-8 text-2xl lg:text-4xl leading-tight">

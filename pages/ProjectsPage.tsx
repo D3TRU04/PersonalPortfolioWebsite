@@ -3,13 +3,12 @@
 import React from 'react';
 import NavBar from './NavBar';
 import { AuroraBackground } from '../components/aurora-background';
-import Image from 'next/image';
 import { Carousel, Card } from '../components/apple-cards-carousel';
 
 const ProjectsPage: React.FC = () => {
   return (
     <>
-      <NavBar activePath="projects" />
+      <NavBar />
       <AuroraBackground>
         <div className="w-full h-full py-20">
           <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
@@ -45,8 +44,7 @@ const DummyContent: React.FC = () => {
           <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
             <span className="font-bold text-neutral-700 dark:text-neutral-200">
               The first rule of Apple club is that you boast about Apple club.
-            </span>{' '}
-            Keep a journal, quickly jot down a grocery list, and take amazing
+            </span>&#39; Keep a journal, quickly jot down a grocery list, and take amazing
             class notes. Want to convert those notes to text? No problem. Langotiya jeetu ka mara hua yaar is ready to capture every thought.
           </p>
           {/* <Image
